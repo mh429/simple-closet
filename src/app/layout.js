@@ -18,21 +18,21 @@ export const metadata = {
     index: false,
     follow: false,
   },
-  // openGraph: {
-  //   title: "Siimple Closet",
-  //   description: "個人用に開発した、シンプルで操作性の良いクローゼットアプリのデモサイトです。",
-  //   url: "",
-  //   siteName: "Siimple Closet",
-  //   images: [
-  //     {
-  //       url: "/ogp.jpg",
-  //       width: 1200,
-  //       height: 630,
-  //     },
-  //   ],
-  //   locale: "ja_JP",
-  //   type: "website",
-  // },
+  openGraph: {
+    title: "Simple Closet",
+    description: "個人用に開発した、シンプルで操作性の良いクローゼットアプリのデモサイトです。",
+    url: "https://simple-closet.vercel.app/",
+    siteName: "Siimple Closet",
+    images: [
+      {
+        url: "/ogp.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "ja_JP",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {

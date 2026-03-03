@@ -125,9 +125,6 @@ export default function TagSettings() {
       <button onClick={() => router.push("/settings")}>戻る</button>
       <h2>タグの編集</h2>
 
-      {/* {!user && <p className="note">※ログイン時のみ操作可能です</p>} */}
-
-
       <section>
         <h3>タグを新規作成する</h3>
         <div className="tagCreateWrapper">

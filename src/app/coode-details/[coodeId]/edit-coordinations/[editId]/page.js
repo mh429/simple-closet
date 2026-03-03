@@ -133,17 +133,6 @@ export default function EditCoordinations() {
     setSelectedClothes(data || [])
   }
 
-  // // ストレージの画像URLを取得
-  // const getImageUrl = (imgPath) => {
-  //   if(!imgPath) return null;
-  //   const { data } = supabase.storage
-  //     .from('clothes_image')
-  //     .getPublicUrl(imgPath)
-
-  //   return data.publicUrl
-  // }
-
-
   // 編集前状態をセット
   useEffect(() => {
     if (!coodeId) return;

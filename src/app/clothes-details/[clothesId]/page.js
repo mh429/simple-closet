@@ -45,17 +45,6 @@ export default async function ClothesDetail(props) {
     redirect("/")
   }
 
-  // // ストレージの画像URLを取得する関数
-  // const getImageUrl = (imgPath) => {
-  //   if(!imgPath) return null;
-
-  //   const { data } = supabase.storage
-  //     .from('clothes_image')
-  //     .getPublicUrl(imgPath)
-
-  //   return data.publicUrl
-  // }
-
   return (
     <main>
       <FromBackButton />
@@ -129,7 +118,6 @@ export default async function ClothesDetail(props) {
         </Link>
         <Link href={`/clothes-details/${clothesId}/delete-clothes/${clothesId}?from=${from}`}>
           <button>削除</button>
-          {/* <button className="deleteButton"><BsTrash3Fill/></button> */}
         </Link>
       </div>
 

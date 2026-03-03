@@ -21,17 +21,6 @@ export default async function Home() {
     `)
     .eq('pin', true)
 
-  // // ストレージの画像URLを取得する関数
-  // const getImageUrl = (imgPath) => {
-  //   if(!imgPath) return null;
-
-  //   const { data } = supabase.storage
-  //     .from('clothes_image')
-  //     .getPublicUrl(imgPath)
-
-  //   return data.publicUrl
-  // }
-
   // t_tagsのデータを取得する関数（コーデと紐づいてるものだけ）
   // ascending: falseで新しいものが上に来る
   // created_atは取得しなくて大丈夫
@@ -65,18 +54,6 @@ export default async function Home() {
             )
             }
           </div>
-          {/* <div className="tagArea">
-            {tags ? (
-              tags.map((t) => (
-                  <Link key={t.id} href={`/tag-coodes/${t.id}`}>
-                    <div className="tag clickableTag">{t.name}</div>
-                  </Link>
-              ))
-            ):(
-              <p>登録されているタグはありません</p>
-            )
-            }
-          </div> */}
 
         </section>
 
@@ -101,22 +78,6 @@ export default async function Home() {
                 </Link>
               ))}
             </div>
-            // <div className="coodeThumbArea">
-            //   {coodes.map((c) => (
-            //     <Link key={c.id} href={`/coode-details/${c.id}`}>
-            //       <div className="coodeThumbWrapper">
-            //         <p className="idNum">ID:{c.id}</p>
-            //         <div className="coodeThumbImgWrapper">
-            //           {c.t_coode_clothes.map((item) => (
-            //               <Image key={item.t_clothes.id}
-            //               src={getImageUrl(item.t_clothes.img_path)} alt='アイテムサムネイル画像'
-            //               width={70} height={70} className="coodeThumbImg"/>
-            //           ))}
-            //         </div>
-            //       </div>
-            //     </Link>
-            //   ))}
-            // </div>
           ):(
               <p>ピン留めされているコーデはありません</p>
           )

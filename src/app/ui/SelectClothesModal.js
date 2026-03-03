@@ -23,21 +23,9 @@ export default function SelectClothesModal({ clothes, setClothes, onClose }) {
     setCategoryClothes(data || [])
   }
 
-  // // ストレージの画像URLを取得する関数
-  // const getImageUrl = (imgPath) => {
-  //   if(!imgPath) return null;
-
-  //   const { data } = supabase.storage
-  //     .from('clothes_image')
-  //     .getPublicUrl(imgPath)
-
-  //   return data.publicUrl
-  // }
-
   useEffect(() => {
     fetcCategoryClothes()
   }, [])
-
 
   // 服をトグルする関数
   const toggleClothes = (id) => {
@@ -54,7 +42,6 @@ export default function SelectClothesModal({ clothes, setClothes, onClose }) {
   return (
     <div className="modalContent">
       <button onClick={onClose} className="grayBtn">選択して閉じる</button>
-      {/* <p>アイテムを選択してください</p> */}
       <div className="modalClothes">
 
         {

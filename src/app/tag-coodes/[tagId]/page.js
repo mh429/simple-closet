@@ -38,23 +38,11 @@ export default async function tagCoode(props) {
     `)
     .eq('t_coode_tags.tags_id', tagId)
 
-  // // ストレージの画像URLを取得する関数
-  // const getImageUrl = (imgPath) => {
-  //   if(!imgPath) return null;
-
-  //   const { data } = supabase.storage
-  //     .from('clothes_image')
-  //     .getPublicUrl(imgPath)
-
-  //   return data.publicUrl
-  // }
-
   return (
     <main>
       <Link href="/">
         <button>戻る</button>
       </Link>
-      {/* <h2>タグでコーデを検索</h2> */}
 
       <section>
         <div className="tagResult">
@@ -65,8 +53,6 @@ export default async function tagCoode(props) {
         {!coodes || coodes.length === 0 ? (
           <p>このタグに登録されているコーデはありません</p>
         ) : (
-
-
             <div className="coodeThumbArea">
               {coodes.map((c) => (
                 <Link key={c.id} href={`/coode-details/${c.id}?from=${currentPath}`} className="coodeThumbWrapper">
@@ -83,28 +69,6 @@ export default async function tagCoode(props) {
                 </Link>
               ))}
             </div>
-
-
-
-
-          // coodes.map((c) => (
-
-          //   <Link key={c.id} href={`/coode-details/${c.id}?from=${currentPath}`}>
-          //     <div>
-          //       <p className="idNum">ID:{c.id}</p>
-
-          //       {c.t_coode_clothes.map((item) => (
-          //           <Image key={item.t_clothes.id} src={getImageUrl(item.t_clothes.img_path)} alt='' width={100} height={100} />
-          //       ))}
-
-          //     </div>
-          //   </Link>
-
-          // ))
-
-
-
-
         )}
       </section>
 

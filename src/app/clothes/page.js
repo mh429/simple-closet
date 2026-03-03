@@ -21,15 +21,6 @@ export default async function Clothes() {
       )
     `)
 
-  // // ストレージの画像URLを取得する関数
-  // const getImageUrl = (imgPath) => {
-  //   if(!imgPath) return null;
-  //   const { data } = supabase.storage
-  //     .from('clothes_image')
-  //     .getPublicUrl(imgPath)
-  //   return data.publicUrl
-  // }
-
   return (
     <main>
       <h2>アイテム一覧</h2>

@@ -22,17 +22,6 @@ export default async function Home() {
       )
     `)
 
-  // // ストレージの画像URLを取得する関数
-  // const getImageUrl = (imgPath) => {
-  //   if(!imgPath) return null;
-
-  //   const { data } = supabase.storage
-  //     .from('clothes_image')
-  //     .getPublicUrl(imgPath)
-
-  //   return data.publicUrl
-  // }
-
   return (
     <main>
 
@@ -63,30 +52,8 @@ export default async function Home() {
             <div className="coodeThumbNone">
               <p>登録されたコーデがありません</p>
             </div>
-
           )
           }
-
-        {/* {
-        coodes ? (
-          coodes.map((c) => (
-            <Link key={c.id} href={`/coode-details/${c.id}?from=${currentPath}`}>
-              <div>
-                <p>ID:{c.id}</p>
-
-                {c.t_coode_clothes.map((item) => (
-                    <Image key={item.t_clothes.id} src={getImageUrl(item.t_clothes.img_path)} alt='' width={100} height={100} />
-                ))}
-
-              </div>
-            </Link>
-          ))
-        ):(
-          <p>登録されたコーデはありません</p>
-        )
-
-        } */}
-
       </section>
     </main>
   );
