@@ -311,13 +311,16 @@ button:active {
 }
 .tag {
   padding: 10px 15px;
-  background-color: #4181cf;
+  background-color: var(--blue1);
   color: var(--white);
   border-radius: calc(infinity * 1px);
 }
 .clickableTag:active {
   background-color: var(--blue2);
 }
+/* .unclickableTag {
+  background-color: var(--blue2);
+} */
 
 /* コーデサムネイル */
 .coodeThumbArea {
@@ -397,9 +400,6 @@ button:active {
 }
 .selectedClothes>a:active {
   opacity: .7;
-}
-.unclickableTag {
-  background-color: var(--blue2);
 }
 
 /* コーデアイテム選択モーダル */
