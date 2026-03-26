@@ -23,7 +23,7 @@ export const metadata = {
     title: "Simple Closet",
     description: "個人用に開発した、シンプルで操作性の良いクローゼットアプリのデモサイトです",
     url: "https://simple-closet.vercel.app/",
-    siteName: "Simple Closet",
+    siteName: "Simple Closet（demo）",
     images: [
       {
         url: "/ogp.jpg",
