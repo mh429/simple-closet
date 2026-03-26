@@ -13,7 +13,7 @@ const noto = Noto_Sans_JP({
 });
 
 export const metadata = {
-  title: "Simple Closet",
+  title: "Simple Closet（demo）",
   description: "シンプルで操作性の良いクローゼットアプリ",
   robots: {
     index: false,
@@ -23,7 +23,7 @@ export const metadata = {
     title: "Simple Closet",
     description: "個人用に開発した、シンプルで操作性の良いクローゼットアプリのデモサイトです",
     url: "https://simple-closet.vercel.app/",
-    siteName: "Simple Closet（demo）",
+    siteName: "Simple Closet",
     images: [
       {
         url: "/ogp.jpg",
