@@ -70,21 +70,21 @@
 
 ## DB構成
 
-### Tables
+### テーブル
 
 - `t_categories`（カテゴリ）
 - `t_clothes`（服）
 - `t_coordinations`（コーディネート）
 - `t_tags`（タグ）
 
-### Intermediate Tables（中間テーブル）
+### 中間テーブル
 
-- `t_coode_clothes`
-- `t_coode_tags`
+- `t_coode_clothes`（コーディネートと服）
+- `t_coode_tags`（コーディネートとタグ）
 
-### Storage
+### ストレージ
 
-- `clothes_image`
+- `clothes_image`（服の画像）
 
 ---
 
