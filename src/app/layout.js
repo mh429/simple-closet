@@ -44,11 +44,6 @@ export default function RootLayout({ children }) {
         <Nav />
           {children}
       </body>
-
-      {/* googleアナリティクス */}
-      {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID && (
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} />
-      )}
     </html>
   );
 }
